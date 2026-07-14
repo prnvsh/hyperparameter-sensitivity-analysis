@@ -1,6 +1,7 @@
 # Hyperparameter Study Project
 
 This project performs hyperparameter tuning and sensitivity analysis on several classification models using the datasets included in the repository. The objective is to evaluate model behaviour (Decision Tree, KNN, Logistic Regression, SVM) across hyperparameter sets and report sensitivity/variance of performance metrics.
+<img width="937" height="474" alt="Screenshot 2026-07-14 140124" src="https://github.com/user-attachments/assets/2595ca14-36dc-4c3d-a220-1c8513b7d6d3" />
 
 ## Project structure
 
@@ -37,6 +38,11 @@ hyperparameter_study
 Notes on data
 - The `data/` folder contains the actual CSV files used for experiments. Confirm column names and target column in `src/preprocessing.py` before running.
 - Datasets vary in size and feature types; preprocessing currently handles missing values, basic encoding, and scaling where required.
+<img width="927" height="458" alt="Screenshot 2026-07-14 140137" src="https://github.com/user-attachments/assets/159e19c0-9edf-4374-b9ec-828d964cc47d" />
+<img width="935" height="474" alt="Screenshot 2026-07-14 140148" src="https://github.com/user-attachments/assets/05f640c1-b628-4740-b264-f73c7e0316a1" />
+<img width="940" height="463" alt="Screenshot 2026-07-14 140158" src="https://github.com/user-attachments/assets/ae4a86b4-0e45-463c-8a59-f64b41c59b95" />
+<img width="941" height="453" alt="Screenshot 2026-07-14 140206" src="https://github.com/user-attachments/assets/863e2aa8-8e58-41d2-bec5-3f755e10541e" />
+<img width="943" height="455" alt="Screenshot 2026-07-14 140216" src="https://github.com/user-attachments/assets/5cdf8915-ec84-4dab-a30e-6f67aa396aaf" />
 
 Hyperparameter configuration
 - Hyperparameter sets for each model live in `hyperparameters/*.json`. Each JSON should define the grid or list of values the study should evaluate. Example expected keys (per model):
@@ -60,6 +66,8 @@ Setup instructions
    ```
    python src/main.py
    ```
+<img width="941" height="458" alt="Screenshot 2026-07-14 140427" src="https://github.com/user-attachments/assets/10f5dc6e-e744-4e4a-8a6e-3b4f2a371224" />
+<img width="924" height="321" alt="Screenshot 2026-07-14 140231" src="https://github.com/user-attachments/assets/89c21883-038a-4329-8953-12a8e35a9fb5" />
 
 Usage guidelines
 - src/main.py: entry point — configures experiments, loads hyperparameter sets, iterates datasets and models, and writes results to `results/`.
